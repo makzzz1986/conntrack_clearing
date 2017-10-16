@@ -1,0 +1,79 @@
+icmp src=10.10.1.106 dst=10.10.2.201
+icmp src=10.10.1.106 dst=10.10.2.202
+icmp src=10.10.1.17  dst=10.10.2.152
+icmp src=10.10.1.17  dst=10.10.2.138
+icmp src=10.10.1.133 dst=10.10.2.2
+icmp src=10.10.1.133 dst=10.10.2.2
+icmp src=10.10.1.133 dst=10.10.2.194
+icmp src=10.10.2.133 dst=10.10.1.2
+icmp src=10.10.2.133 dst=10.10.1.2
+icmp src=10.10.2.133 dst=10.10.1.194
+icmp src=10.10.2.133 dst=10.10.1.137
+icmp src=10.10.2.74  dst=10.10.1.114
+icmp src=10.10.2.74  dst=10.10.1.51
+icmp src=10.10.2.143 dst=10.10.1.234
+icmp src=10.10.2.143 dst=10.10.3.234
+icmp src=10.10.1.143 dst=10.10.3.42
+icmp src=10.10.1.143 dst=10.10.3.234
+icmp src=10.10.1.130 dst=10.10.3.26
+tcp src=10.10.1.106 dst=10.10.2.201 sport=64149 dport=135
+tcp src=10.10.1.106 dst=10.10.2.201 sport=64153 dport=61295
+tcp src=10.10.1.106 dst=10.10.2.201 sport=64363 dport=135
+tcp src=10.10.1.106 dst=10.10.2.201 sport=64406 dport=61295
+tcp src=10.10.1.106 dst=10.10.2.201 sport=65463 dport=135
+tcp src=10.10.1.106 dst=10.10.2.201 sport=65506 dport=445
+tcp src=10.10.1.106 dst=10.10.2.201 sport=65509 dport=139
+tcp src=10.10.1.106 dst=10.10.2.202 sport=49819 dport=135
+tcp src=10.10.1.106 dst=10.10.2.202 sport=49893 dport=445
+tcp src=10.10.1.106 dst=10.10.2.202 sport=49903 dport=139
+tcp src=10.10.1.106 dst=10.10.2.202 sport=49915 dport=135
+tcp src=10.10.1.106 dst=10.10.2.202 sport=50039 dport=445
+tcp src=10.10.1.106 dst=10.10.2.202 sport=50040 dport=139
+tcp src=10.10.1.106 dst=10.10.2.202 sport=50573 dport=135
+tcp src=10.10.1.106 dst=10.10.2.202 sport=50690 dport=445
+tcp src=10.10.1.106 dst=10.10.2.202 sport=50693 dport=139
+tcp src=10.10.1.106 dst=10.10.2.202 sport=50739 dport=445
+tcp src=10.10.1.106 dst=10.10.2.202 sport=50746 dport=139
+tcp src=10.10.1.106 dst=10.10.2.202 sport=51430 dport=135
+tcp src=10.10.1.106 dst=10.10.2.202 sport=51456 dport=50418
+tcp src=10.10.1.106 dst=10.10.2.202 sport=51790 dport=135
+tcp src=10.10.1.106 dst=10.10.2.202 sport=51840 dport=135
+tcp src=10.10.1.106 dst=10.10.2.202 sport=51972 dport=445
+tcp src=10.10.3.75 dst=10.10.2.114 sport=52571 dport=135
+tcp src=10.10.3.75 dst=10.10.2.114 sport=61618 dport=1433
+tcp src=10.10.3.75 dst=10.10.2.114 sport=61635 dport=135
+tcp src=10.10.3.75 dst=10.10.2.115 sport=55721 dport=1433
+tcp src=10.10.3.75 dst=10.10.2.115 sport=55741 dport=135
+tcp src=10.10.3.75 dst=10.10.2.115 sport=55749 dport=135
+tcp src=10.10.3.75 dst=10.10.2.115 sport=55759 dport=1027
+tcp src=10.10.3.75 dst=10.10.2.180 sport=53111 dport=1433
+tcp src=10.10.3.75 dst=10.10.2.180 sport=53147 dport=135
+tcp src=10.10.3.75 dst=10.10.2.114 sport=62323 dport=1433
+tcp src=10.10.3.75 dst=10.10.2.114 sport=62349 dport=135
+tcp src=10.10.3.75 dst=10.10.2.114 sport=62365 dport=1027
+tcp src=10.10.3.75 dst=10.10.2.178 sport=55906 dport=1433
+tcp src=10.10.3.75 dst=10.10.2.53 sport=49158 dport=1433
+tcp src=10.10.3.75 dst=10.10.2.53 sport=53359 dport=135
+tcp src=10.10.3.75 dst=10.10.2.53 sport=63022 dport=1433
+udp src=10.10.2.130 dst=10.10.1.193 sport=41387 dport=161
+udp src=10.10.2.130 dst=10.10.1.193 sport=42220 dport=161
+udp src=10.10.2.130 dst=10.10.1.193 sport=42525 dport=161
+udp src=10.10.2.130 dst=10.10.1.193 sport=42571 dport=161
+udp src=10.10.2.130 dst=10.10.1.193 sport=42636 dport=161
+udp src=10.10.2.130 dst=10.10.1.193 sport=43067 dport=161
+udp src=10.10.2.130 dst=10.10.1.193 sport=43092 dport=161
+udp src=10.10.2.130 dst=10.10.1.193 sport=44401 dport=161
+udp src=10.10.2.130 dst=10.10.1.193 sport=44743 dport=161
+udp src=10.10.2.130 dst=10.10.1.193 sport=44824 dport=161
+udp src=10.10.2.130 dst=10.10.1.193 sport=45301 dport=161
+udp src=10.10.2.130 dst=10.10.1.193 sport=45680 dport=161
+udp src=10.10.2.130 dst=10.10.1.193 sport=45927 dport=161
+udp src=10.10.2.130 dst=10.10.1.193 sport=46661 dport=161
+udp src=10.10.2.130 dst=10.10.1.193 sport=47087 dport=161
+udp src=10.10.2.130 dst=10.10.1.193 sport=47632 dport=161
+udp src=10.10.2.130 dst=10.10.1.193 sport=47718 dport=161
+udp src=10.10.2.130 dst=10.10.1.193 sport=48261 dport=161
+udp src=10.10.2.130 dst=10.10.1.193 sport=48458 dport=161
+udp src=10.10.2.130 dst=10.10.1.193 sport=48535 dport=161
+udp src=10.10.2.130 dst=10.10.1.193 sport=48911 dport=161
+udp src=10.10.2.130 dst=10.10.1.193 sport=49005 dport=161

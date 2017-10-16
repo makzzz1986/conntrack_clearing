@@ -1,0 +1,18 @@
+# conntrack didn't log sessions, /proc/net/ip_conntrack contains only existed connections at with moment
+# every our we get conntrack (you can change it and get it much or less often, man crontab for it)
+# after that we cut it to get only useful data, like:
+# icmp src=192.168.1.1 dst=192.168.1.2
+# tcp src=192.168.1.1 dst=192.168.1.2 sport=49867 dport=80
+# add it to temporary file /home/conntrack.txt
+# m h dom mon dow user	command 
+
+  0 *   * * *   root    cat /proc/net/ip_conntrack | awk '$1~/icmp/ {print $1, $4, $5}; $1~/tcp/ {print $1, $5, $6, $7, $8}; $1~/udp/ {print $1, $4, $5, $6, $7}' | sort -u >> /home/conntrack.txt
+
+# after two minuts we get unique lines and add it to /home/conntrack_sum.txt
+
+  2 *   * * *   root    cat /home/conntrack.txt | sort -u > /home/conntrack_sum.txt
+
+# now we need to replace temporary conntrack by conntrack_sum
+
+  4 0 * * Sat   root    cp /home/conntrack_sum.txt /home/conntrack.txt
+
